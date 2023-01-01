@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Sign_in.css"> <!--STYLESHEET IS APPLICABLE TO ENTIRE DOC-->
+        <header style="background-color: rgba(205, 121, 121, 0.6);">
+            <div class="container">
+                <div>
+                    <img class="arlogo" src="view/Images/arablogo.jpg" alt="arlogo">
+                    <img class="englogo" src="view/Images/englogo.jpg" alt="englogo">
+                </div>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+                <img class="qanun" src="view/Images/qanun.jpg" alt="qanun" 
+                    style="display:inline-block;" />
+                <img class="drums"src="view/Images/drums.jpg" alt="drums" 
+                    style="display:inline-block;" /> 
+                <img class="mic" src="view/Images/mic.jpg" alt="mic" 
+                    style="display:inline-block;" />
+                <img class="violin" src="view/Images/violin.jpg" alt="violin" 
+                    style="display:inline-block;" />
+                <img class="piano" src="view/Images/piano.jpg" alt="piano" 
+                    style="display:inline-block;" />
+            </div>
+        </header>
+    </head>
+    <body>
+        <h1>
+            Sign In
+        </h1>
+        <div style="margin-top:-25px;">
+        <form action="connect.php" method="post">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+            
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                <button type="submit">Sign In</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            
+              <div style="background-color:#f1f1f1 ; margin-top: 10px;">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+        </form>
+    </div>
+    </body>
+    <footer style="background-color:black;">
+        <div class="box"></div>
+    </footer>
+</html>
