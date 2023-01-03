@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>تسجيل كيان - Kayan Registration</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+  </head>
+  <body>
+    <div class="testbox">
+      <form action="process_apply.php" method = post>
+        <div class="banner">
+          <h1>New Member Registration</h1>
+        </div>
+        <div class="columns">
+          <div class="item">
+            <label for="phone"> Phone Number<span>*</span></label>
+            <input id="phone" type="text" name="phone" required/>
+          </div>
+          <div class="item">
+            <label for="dob">Date of Birth<span>*</span></label>
+            <input id="dob" type="date"   name="dob" required/>
+          </div>
+          <div class="item">
+            <label for="nat_id">National ID<span>*</span></label>
+            <input id="nat_id" type="text"   name="nat_id" required/>
+          </div>
+          <div class="item">
+            <label for="college">College</label>
+            <input id="college" type="text"   name="college" />
+          </div>
+          <div class="item">
+            <label for="faculty">Faculty</label>
+            <input id="faculty" type="text" name="faculty" />
+          </div>
+          <div class="item">
+            <label for="year">Year of Study</label>
+            <input id="year" type="text"   name="year" />
+          </div>
+          <div class="item">
+			<label for="exinfo">Extra Info (Allergies, disabilities, medication, etc.):</label>
+			<textarea id="exinfotext" name="exinfotext" rows="4" cols="50"></textarea>
+			<br>
+          </div>
+          
+        </div>
+        <div class="question">
+          <label></label>
+          <div class="question-answer">
+
+          <div class="mb-3">
+            <label class="form-label" for="customFile">Upload an image of your national ID</label>
+            <input type="file" class="form-control" name="natIDimg">
+          </div>
+		  
+		  <div class="mb-3">
+            <label class="form-label" for="customFile">Upload an image of your college ID</label>
+            <input type="file" class="form-control" name="uniIDimg">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="customFile">Upload a personal photo</label>
+            <input type="file" class="form-control" name="photo">
+          </div>
+		  
+          </div>
+        </div>
+        <div class="question">
+          <label>Preferred way to contact </label>
+          <div class="question-answer">
+            <div>
+              <input type="radio" value="none" id="radio_4" name="contact"/>
+              <label for="radio_4" class="radio"><span>Phone</span></label>
+            </div>
+            <div>
+              <input  type="radio" value="none" id="radio_5" name="contact"/>
+              <label for="radio_5" class="radio"><span>Email</span></label>
+            </div>
+            <div>
+              <input  type="radio" value="none" id="radio_6" name="contact"/>
+              <label for="radio_6" class="radio"><span>Any</span></label>
+            </div>
+          </div>
+        </div>
+        <h2>Terms and Conditions</h2>
+        <input type="checkbox" name="checkbox1" required>
+        <label>You consent to receive communications from us electronically. We will communicate with you by e-mail or phone. You agree that all agreements, notices, disclosures and other communications that we provide to you electronically satisfy any legal requirement that such communications be in writing.</label>
+        <div class="btn-block">
+          <button type="submit" href="/">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

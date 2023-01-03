@@ -56,7 +56,9 @@ try {
   // commit the transaction
   $conn->commit();
   echo "New records created successfully";
-} catch(PDOException $e) {
+  header("Location: signup-success.html");
+} 
+catch(PDOException $e) {
   // roll back the transaction if something failed
   $conn->rollback();
   echo "Error: " . $e->getMessage();
